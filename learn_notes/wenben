@@ -1,0 +1,82 @@
+tf.Variable(1,name)
+tf.constant(0)
+tf.add(a,b)
+tf.assign(copy,2)
+tf.reduce_sum() 		求和
+tf.global_variables_initializser()
+x=tf.placeholder(tf.float32,[2,3],name='tx') 占位符
+tf.random_normal([100]) 100个标准正太随机数
+tf.matmul() 矩阵叉乘
+tf.nn.softmax
+sess.run(x,feed_dict={a:[1,2..]})字典填充
+
+sess = tf.Session()
+sess.run(operate)
+sess.close()
+np.random.randn(10) 10个标准正太分布
+*data.shape  取内容
+
+*******matplotlib.pyplot as plt:*****************
+plt.figure(1,figsize = (9,3))画布大小可选
+plt.subplot(211) \(212)
+plt.plot(x,y,'r--',x2,y2,'g^',x3,y3,'bs')线
+plt.scatter(x,y)			点
+plt.bar(x,y)				柱状图
+
+plt.title('***') plt.subtitle()
+plt.legend()
+plt.xlabel()
+plt.ylabel()
+
+****************numpy as np***********************
+aa=[[2,3,4],[1,2,3]] 	列表
+aa2=np.array(aa)	创建数组
+
+np.arange(0,11,2) 	0~11间隔为2的数
+np.zeros(7)      	7 vertex0
+np.zeros((3,5))
+np.ones(5)       	5ge1
+np.linspace(1,3,15)  	1~3 15个点
+np.eye(6) 
+np.random.rand(4) 	0~1均匀随机数组 4个
+np.random.rand(5,4)    	5*4
+np.random.randn(3,5)	高斯分布标准正态分布
+np.random.randint(2,20,7) 2<= <20 7个
+
+
+arr=np.random.rand(25)
+arr.reshape(5,5) 	一维数组转化为二维数组 大小要保持一致
+arr.max()		返回最大值
+arr.min()		返回最小值
+arr.shape		返回数组形状,无括号
+
+索引
+一维:aa[4] 坐标索引某个值 范围:aa[2:3] aa[:3] aa[3:]
+二维:aa[3,4] aa[:1,:1]  
+aa[1]  返回第一行 aa[:2] 返回0~2行
+a>4 返回真值array([False, False, False,  True,  True])
+a[(a>2)&(a<8)] 返回符合的元素 不改变a的数值
+
+广播:改变数值
+a[0:3]=50
+
+数学运算(元素对元素)
+a*a
+a+50
+np.sqrt(a)		开根号
+np.exp(a) 		取指数
+np.sin(a)
+np.cos(a)
+np.log(a)		取对数
+np.sum(a)
+np.mean(aa)   		均值 
+np.var(aa)		方差
+np.std(aa)		标准差
+np.matmul(a,b)		矩阵乘法
+
+
+
+
+
+
+
